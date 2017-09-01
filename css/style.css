@@ -22,33 +22,156 @@ body {
 
 header > h1 {
     margin:0;
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    transform: translateY(50%);
 }
 
 #nav {
     width:100%;
-    background-color: aqua 
+    background-color:#5A56FF;
+    min-height: 80px;
+    font-family: 'Lato', sans-serif;
+    height: auto;
+ 
 }
 
-.menu {
+#nav> ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    transform: translateY(50%); 
+}
+
+#nav > ul > button {
+    min-width: 120px;
+    background-color: #FF49E4
+    color: #fff;
+    border: none;
+    padding: 15px 32px;
+    transition: background-color .25s;
+
+}
+
+#nav > ul > button:hover {
+    background-color: #9E43E8;
+}
+
+/*.menu {
     margin:0; 
     display:flex;
     background:#d7e6f;
     list-style-type: none;
     justify-content: space-around;
+} 
+*/ 
+
+#middle-wraper-width{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    max-width: 960px; 
+    margin: 0 auto;
 }
 
 #middle-wraper{
-    display: flex;
+    background-color: none;
 }
 
-#main-content-wraper {
-    background-color: greenyellow; 
-    width: 80%; 
+.side-by-side {
+    display:flex 
+}
+
+#main-content-wraper .image-content {
+    text-align: center; 
+    width: 50%; 
+    margin-top: 50px;
+}
+
+.image-content > img {
+    max-width: 200px;
+    border-radius: 50%
+}
+
+.image-content > h4 {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 300;
+    color: #FF49E4; 
+    
+}
+
+.image-content > h4 > a {
+    color: #FF49E4;
+}
+
+.image-content > h4 > a:hover {
+    color: #ADFFFF; 
+} 
+
+#main-content-wraper article {
+    width: 50%; 
+    margin-top: 100px;
+}
+
+#main-content-wraper article h2 {
+    text-align: center;
+}
+
+#main-content-wraper article p {
+    max-width: 300px; 
+    margin: 0 auto;
+}
+
+#main-content-wraper #skills {
+    text-align: center; 
+    font-weight: 300; 
+    letter-spacing: 2px;
+}
+
+#main-content-wraper #skills span {
+    font-weight: 400; 
 }
 
 #aside-content-wraper {
-    background-color: plum;
-    width: 20%;
+    background-color: #fff;
+    width: 35%;
+    font-family: 'Lato', sans-serif; 
+}
+
+#aside-right {
+    margin: 0 50px 0 8px;
+}
+
+#aside-right h3 {
+  text-align: center;
+}
+
+#latest-work {
+    list-style-type: none;    
+}
+
+#latest-work > li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    border-bottom: 1px black solid; 
+}
+
+#latest-work >li:before {
+    content: '';
+    border-color: transparent #008eef;
+    border-style: solid; 
+    border-width: .35em 0 .35em .45em; 
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: .9em;
+    position: relative;
+}
+
+#favorite-sites {
+    background-image: url ()
 }
 
 footer {
